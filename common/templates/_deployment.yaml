@@ -25,7 +25,7 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}/{{ template "common.name" . }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          {{ if or .Values.configmap.VolumeMounts }}
+          {{ if .Values.configmap }}
           volumeMounts:
           - name: {{ include "common.fullname" . }}
             mountPath: {{ .Values.configmap.volumeMounts.mountPath }}
