@@ -1,0 +1,6 @@
+dependencies:
+- name: common
+  repository: https://raw.githubusercontent.com/beingyash/helm-charts/common/
+  version: 0.1.0
+digest: sha256:d894149a855058a6836381a9fbe3dc7d95fc22799f7d50ee4215c0d35bbb566e
+generated: "2019-09-03T16:03:48.355985108+05:30"
