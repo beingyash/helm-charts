@@ -3,11 +3,21 @@ entries:
   common:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-09-03T11:49:22.811881772+05:30"
+    created: "2019-09-03T16:32:50.450600345+05:30"
     description: A templated Helm chart for Kubernetes
-    digest: ca518954c5fd9bbcc6fc0263de440caa923efb54774b361afa763905b6d9eb12
+    digest: a3fa4ba9e4fdaf9bc8d2bdef865d45ed998ba1cc7205c5ea8ae2923053f76eeb
     name: common
     urls:
     - common-0.1.0.tgz
     version: 0.1.0
-generated: "2019-09-03T11:49:22.810838211+05:30"
+  lil-auth:
+  - apiVersion: v1
+    appVersion: 2.0.9
+    created: "2019-09-03T16:32:50.451177126+05:30"
+    description: lil-auth Helm chart for Kubernetes
+    digest: a27f2e6ef1ec35912afd20e1e1659f37c49231070b1f43ca4afc67ffc86b2cca
+    name: lil-auth
+    urls:
+    - lil-auth-0.1.0.tgz
+    version: 0.1.0
+generated: "2019-09-03T16:32:50.449981162+05:30"
