@@ -25,10 +25,12 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}/{{ template "common.name" . }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{ if or .Values.configmap.VolumeMounts }}
           volumeMounts:
           - name: {{ include "common.fullname" . }}
             mountPath: {{ .Values.configmap.volumeMounts.mountPath }}
             subPath: {{ .Values.configmap.volumeMounts.subPath }}
+          {{- end }}
           ports:
             - name: http
               containerPort: 80
